@@ -4,7 +4,7 @@
   "description": "Simple Dashboard Page application",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "node_modules/.bin/vitest",
     "dev": "node_modules/.bin/vite",
     "build": "node_modules/.bin/vite build",
     "preview": "node_modules/.bin/vite preview",
@@ -22,8 +22,6 @@
   },
   "homepage": "https://github.com/anijitsao/react-app-simple-dashboard-page#readme",
   "dependencies": {
-    "@testing-library/react": "^16.3.3",
-    "@testing-library/user-event": "^14.6.13",
     "chart.js": "^4.6.1",
     "react": "^19.3.1",
     "react-chartjs-2": "^5.3.1",
@@ -31,7 +29,12 @@
     "uuid": "^14.0.3"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^8.0.0",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.13",
     "@vitejs/plugin-react": "^6.3.0",
+    "@vitest/coverage-v8": "^5.1.1",
+    "jsdom": "^31.0.1",
     "vite": "^8.3.8",
     "vitest": "^5.1.1"
   }
