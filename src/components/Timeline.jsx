@@ -40,15 +40,15 @@ export default function Timeline() {
         <div className="viewers-panel-title timeline-title">
           TV Watching Guide
         </div>
-        {timelineActions.map((timeline) => {
+        {timelineActions.map((timeline, index) => {
           return (
-            <div className="timeline-div">
+            <div className="timeline-div" key={index}>
               <div className="timeframe">{timeline.timeframe}</div>
               <div className="actions">
                 <ul>
-                  {timeline.programList.map((program) => {
+                  {timeline.programList.map((program, index) => {
                     return (
-                      <li>
+                      <li key={index}>
                         {program.programName}
                         <span className="channel-metadata">
                           ({program.channelName})
