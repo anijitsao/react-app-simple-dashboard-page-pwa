@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anijitsahu/react-app-simple-dashboard-page.git"
+    "url": "git+https://github.com/anijitsao/react-app-simple-dashboard-page.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/anijitsahu/react-app-simple-dashboard-page/issues"
+    "url": "https://github.com/anijitsao/react-app-simple-dashboard-page/issues"
   },
-  "homepage": "https://github.com/anijitsahu/react-app-simple-dashboard-page#readme",
+  "homepage": "https://github.com/anijitsao/react-app-simple-dashboard-page#readme",
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@babel/preset-env": "^7.20.2",
