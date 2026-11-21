@@ -9,7 +9,7 @@ const Carousel = ({ updateImage, srcNumber, total }) => {
       {srcNumber != 1 ? (
         <Navigation updateImage={updateImage} position={"left"} />
       ) : null}
-      <img src={src} className="carousel-img" />
+      <img src={src} className="carousel-img" alt={"image-" + srcNumber} />
       {srcNumber != total ? (
         <Navigation updateImage={updateImage} position={"right"} />
       ) : null}
