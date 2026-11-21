@@ -2,9 +2,9 @@
 
 A Simple Dashboard page using [React JS](https://react.dev/learn), a JavaScript library to make awesome UI by Facebook and [Chart JS](https://www.chartjs.org/) for plotting charts.
 
-This application uses **component oriented UI** creation paradigm. All components are written in [JSX](https://react.dev/learn/writing-markup-with-jsx) and ES6 style and are combined to get a single build for production purpose using [Webpack 5](https://webpack.js.org/concepts/).
+This application uses **component oriented UI** creation paradigm. All components are written in [JSX](https://react.dev/learn/writing-markup-with-jsx) and ES6 style and are combined to get a single build for production purpose using [Vite](https://vite.dev/guide/).
 
-[Babel](https://babeljs.io/docs/) is used to _transpile_ all [JSX](https://react.dev/learn/writing-markup-with-jsx) code to vanilla JavaScript. For UI creation [HTML5](https://www.w3schools.com/html/html5_intro.asp) and [CSS3](https://www.w3schools.com/css/) are used. [Fontawesome](https://fontawesome.com/) icons are added for aesthetic purpose.
+[Oxc Transformer](https://vite.dev/guide/features#jsx) is used to _transpile_ all [JSX](https://react.dev/learn/writing-markup-with-jsx) code to vanilla JavaScript. For UI creation [HTML5](https://www.w3schools.com/html/html5_intro.asp) and [CSS3](https://www.w3schools.com/css/) are used. [Fontawesome](https://fontawesome.com/) icons are added for aesthetic purpose.
 
 This is a _responsive web application_ for viewing in both Mobile and Desktop.
 
@@ -12,7 +12,7 @@ All the charts are drawn by a popular library named [react-chartjs-2
 ](https://react-chartjs-2.js.org/). It is a [Progressive Web Application(PWA)](https://web.dev/progressive-web-apps/).
 
 
-![Node JS](https://img.shields.io/badge/Node_JS-22.1.3-FFCD11?logo=nodedotjs&logoColor=FFCD11)  ![npm](https://img.shields.io/badge/npm-10.1.3-00CA8E?logo=npm) ![React JS](https://img.shields.io/badge/React_JS-18.2.0-61DAFB?logo=react) ![Babel](https://img.shields.io/badge/Babel-7.18.5-F9DC3E?logo=babel) ![Chart JS](https://img.shields.io/badge/Chart_JS-3.8.2-FF6384?logo=chartdotjs) ![Webpack](https://img.shields.io/badge/Webpack-5.74.0-8DD6F9?logo=webpack) ![HTML5](https://img.shields.io/badge/HTML-5.0.0-E34826?logo=html5) ![CSS3](https://img.shields.io/badge/CSS-3.0.0-663399?logo=css&logoColor=00B265) ![Jest](https://img.shields.io/badge/Jest-29.3.1-61DAFB?logo=jest) ![Google Fonts](https://img.shields.io/badge/Google_Fonts-2.138.1-02B785?logo=googlefonts&logoColor=02B785) ![Font Awesome](https://img.shields.io/badge/Font_Awesome-5.15.0-538DD7?logo=fontawesome)
+![Node JS](https://img.shields.io/badge/Node_JS-26.4.0-FFCD11?logo=nodedotjs&logoColor=FFCD11)  ![npm](https://img.shields.io/badge/npm-12.2.3-00CA8E?logo=npm) ![React JS](https://img.shields.io/badge/React_JS-19.3.1-61DAFB?logo=react) ![Chart JS](https://img.shields.io/badge/Chart_JS-4.6.1-FF6384?logo=chartdotjs) ![Vite](https://img.shields.io/badge/Vite-8.3.8-9135FF?logo=vite) ![HTML5](https://img.shields.io/badge/HTML-5.0.0-E34826?logo=html5) ![CSS3](https://img.shields.io/badge/CSS-3.0.0-663399?logo=css&logoColor=00B265) ![Vitest](https://img.shields.io/badge/Vitest-5.1.1-00FF74?logo=vitest) ![Google Fonts](https://img.shields.io/badge/Google_Fonts-2.138.1-02B785?logo=googlefonts&logoColor=02B785) ![Font Awesome](https://img.shields.io/badge/Font_Awesome-6.1.2-538DD7?logo=fontawesome) ![React Testing Library](https://img.shields.io/badge/React_Testing_Library-16.3.1-61DAFB)
 
 
 ## Features
@@ -43,7 +43,7 @@ All the charts are drawn by a popular library named [react-chartjs-2
 
 7. No database / storage is there. So no changes are _persistant_.
 8. As it is a [Progressive Web Application(PWA)](https://web.dev/progressive-web-apps/) it supports features like **installability, offline load**  through *manifest.json and Service Worker*.
-9. Some of Unit Test Cases are added using [Jest](https://jestjs.io/docs/getting-started) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). 
+9. Some of Unit Test Cases are added using [Vitest](https://vitest.dev/guide/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). 
 
 ## Installation
 

@@ -1,12 +1,17 @@
 // import the render
 import { createRoot } from "react-dom/client";
+import { StrictMode } from "react";
 
-import "./icons/favicon.ico";
+// import "./icons/favicon.ico";
 
 // the actual App component
 import App from "./App";
 
-createRoot(document.getElementById("app")).render(<App />);
+createRoot(document.getElementById("app")).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+);
 
 window.addEventListener("load", async (event) => {
   if (navigator.serviceWorker) {

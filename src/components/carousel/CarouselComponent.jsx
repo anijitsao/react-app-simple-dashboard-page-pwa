@@ -8,11 +8,11 @@ import Carousel from "./Carousel";
 import "../../css/carousel.css";
 
 // images
-import "../../images/1.jpg";
-import "../../images/2.jpg";
-
-import "../../images/3.jpg";
-import "../../images/4.jpg";
+// import "../../assets/1.jpg";
+// import "../../assets/2.jpg";
+//
+// import "../../assets/3.jpg";
+// import "../../assets/4.jpg";
 
 const CarouselComponent = () => {
   const TOTAL_NUMBER_OF_IMAGES = 4;
