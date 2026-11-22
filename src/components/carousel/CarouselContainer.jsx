@@ -14,7 +14,7 @@ import "../../css/carousel.css";
 // import "../../assets/3.jpg";
 // import "../../assets/4.jpg";
 
-const CarouselComponent = () => {
+const CarouselContainer = () => {
   const TOTAL_NUMBER_OF_IMAGES = 4;
   // initialize the initial state and its modifier function
   const [carouselData, setCarouselData] = useState({
@@ -37,10 +37,10 @@ const CarouselComponent = () => {
 
   const { active, total } = carouselData;
   return (
-    <section className="carousel-container">
+    <section className="carousel-container" data-testid="carousel-container">
       <Carousel srcNumber={active} total={total} updateImage={updateImage} />
     </section>
   );
 };
 
-export default CarouselComponent;
+export default CarouselContainer;
