@@ -2,7 +2,7 @@
 export default (props) => {
 	const { name, viewers, id, handleChange } = props
 	return (
-		<div className="change-count basic-padding">
+		<div className="change-count basic-padding" data-testid="change-viewer-count">
 			<label>{name}</label>
 			<input
 				type="range"

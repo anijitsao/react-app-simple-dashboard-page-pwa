@@ -37,7 +37,7 @@ const ChartComponent = () => {
 
   const { data, labels, id } = chartData;
   return (
-    <section className="chart-container">
+    <section className="chart-container" data-testid="chart-component">
       <ViewersPanel updateViewersCount={updateViewersCount} />
       <ChartPanel data={data} labels={labels} id={id} />
     </section>

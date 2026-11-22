@@ -1,9 +1,9 @@
 // components
 import Title from "./Title";
 
-export default ({ userInfo }) => {
+export default () => {
   return (
-    <header>
+    <header data-testid="header">
       <Title />
     </header>
   );

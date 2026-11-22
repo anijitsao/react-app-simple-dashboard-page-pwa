@@ -10,9 +10,10 @@ export default defineConfig({
     environment: "jsdom",
     coverage: {
       enabled: true,
-      provider: 'v8',
+      provider: "v8",
       reporter: ["text", "html"],
-      include: ['src/**/*.{js,jsx}'], // Only track coverage for your source files
-    }
+      include: ["src/**/*.{js,jsx}"], // Only track coverage for your source files
+      exclude: ["src/index.jsx"],
+    },
   },
 });

@@ -5,13 +5,13 @@ const Carousel = ({ updateImage, srcNumber, total }) => {
   const src = `/images/${srcNumber}.jpg`;
 
   return (
-    <div className="carousel">
+    <div className="carousel" data-testid="carousel-item">
       {srcNumber != 1 ? (
-        <Navigation updateImage={updateImage} position={"left"} />
+        <Navigation updateImage={updateImage} position={"left"} data-testid="nav-left"/>
       ) : null}
       <img src={src} className="carousel-img" alt={"image-" + srcNumber} />
       {srcNumber != total ? (
-        <Navigation updateImage={updateImage} position={"right"} />
+        <Navigation updateImage={updateImage} position={"right"} data-testid="nav-right" />
       ) : null}
     </div>
   );
