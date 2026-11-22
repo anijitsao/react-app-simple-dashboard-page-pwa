@@ -47,7 +47,7 @@ const ViewersPanel = (props) => {
   };
 
   return (
-    <article className="viewers-panel basic-padding">
+    <article className="viewers-panel basic-padding" data-testid="viewers-panel">
       <div className="viewers-panel-title">
         Hourwise channel watching details
       </div>

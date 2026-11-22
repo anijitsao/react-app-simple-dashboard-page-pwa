@@ -11,9 +11,9 @@ describe("Carousel", () => {
     expect(carouselDiv).toBeInTheDocument();
   });
 
-  test("testing no Navigation", () => {
+  test("testing no Left Navigation", () => {
     render(<Carousel srcNumber={1} />);
-    const carouselDiv = screen.getAllByTestId("carousel-item");
-    expect(carouselDiv.length).toBeGreaterThan(1);
-  })
+    // const carouselDiv = screen.getAllByTestId("carousel-item");
+    expect(screen.queryByTestId("nav-left")).not.toBeInTheDocument();
+  });
 });
