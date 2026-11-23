@@ -1,5 +1,4 @@
 import { useState, Component } from "react";
-import { v4 as uuidv4 } from "uuid";
 
 // Components
 import ChangeViewerCount from "./ChangeViewerCount";
@@ -11,22 +10,22 @@ const ViewersPanel = (props) => {
       {
         name: "Star Jalsha",
         viewers: "6",
-        id: uuidv4(),
+        id: crypto.randomUUID(),
       },
       {
         name: "Star Sports",
         viewers: "2",
-        id: uuidv4(),
+        id: crypto.randomUUID(),
       },
       {
         name: "National Geograpic",
         viewers: "5",
-        id: uuidv4(),
+        id: crypto.randomUUID(),
       },
       {
         name: "Others",
         viewers: "11",
-        id: uuidv4(),
+        id: crypto.randomUUID(),
       },
     ],
   });

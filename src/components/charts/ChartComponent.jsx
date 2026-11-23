@@ -1,6 +1,5 @@
 // dependencies
 import { useState } from "react";
-import { v4 as uuidv4 } from "uuid";
 
 // components
 import ChartPanel from "./ChartsPanel/ChartPanel";
@@ -20,7 +19,7 @@ const ChartComponent = () => {
   const [chartData, setChartData] = useState({
     labels: allConstants.labels,
     data: allConstants.data,
-    id: uuidv4(),
+    id: crypto.randomUUID(),
   });
 
   const updateViewersCount = (channelInfo) => {
@@ -32,7 +31,7 @@ const ChartComponent = () => {
       data.push(parseInt(ele.viewers));
     });
 
-    setChartData({ ...chartData, labels, data, id: uuidv4() });
+    setChartData({ ...chartData, labels, data, id: crypto.randomUUID() });
   };
 
   const { data, labels, id } = chartData;
