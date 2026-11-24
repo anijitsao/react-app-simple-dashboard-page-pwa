@@ -10,22 +10,22 @@ const ViewersPanel = (props) => {
       {
         name: "Star Jalsha",
         viewers: "6",
-        id: crypto.randomUUID(),
+        id: 0,
       },
       {
         name: "Star Sports",
         viewers: "2",
-        id: crypto.randomUUID(),
+        id: 1,
       },
       {
         name: "National Geograpic",
         viewers: "5",
-        id: crypto.randomUUID(),
+        id: 2,
       },
       {
         name: "Others",
         viewers: "11",
-        id: crypto.randomUUID(),
+        id: 3,
       },
     ],
   });
@@ -54,7 +54,7 @@ const ViewersPanel = (props) => {
         {viewersData.channelInfo.map((ele, index) => {
           return (
             <ChangeViewerCount
-              key={index}
+              key={ele.id}
               {...ele}
               handleChange={handleChange}
               testId={index}
