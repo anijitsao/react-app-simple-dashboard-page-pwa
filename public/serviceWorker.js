@@ -1,7 +1,7 @@
 const cacheName = "dashboard-page";
 const itemToCache = [
   "/",
-  "main.js",
+  // "main.js",
   "/images/1.jpg",
   "/images/2.jpg",
   "/images/3.jpg",

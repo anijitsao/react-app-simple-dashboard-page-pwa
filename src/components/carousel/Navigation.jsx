@@ -5,5 +5,12 @@ export default ({ updateImage, position }) => {
       ? "fas fa-angle-left arrow"
       : "fas fa-angle-right arrow arrow-right";
 
-  return <i id={position} className={classStyle} onClick={updateImage}></i>;
+  return (
+    <i
+      id={position}
+      className={classStyle}
+      onClick={updateImage}
+      data-testid={position + "-arrow"}
+    ></i>
+  );
 };

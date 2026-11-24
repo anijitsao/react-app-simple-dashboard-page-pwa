@@ -33,7 +33,7 @@ const ShowChart = (props) => {
 	}
 
 	let showChart = chooseChart()
-	return <div className="chart-div">{showChart}</div>
+	return <div className="chart-div" data-testid="show-chart-container">{showChart}</div>
 }
 
 export default ShowChart
