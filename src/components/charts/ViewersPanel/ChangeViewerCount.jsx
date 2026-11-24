@@ -1,19 +1,23 @@
 // ChangeViewerCount component
 export default (props) => {
-	const { name, viewers, id, handleChange } = props
-	return (
-		<div className="change-count basic-padding" data-testid="change-viewer-count">
-			<label>{name}</label>
-			<input
-				type="range"
-				min="0"
-				max="24"
-				defaultValue={viewers}
-				onChange={handleChange}
-				step="1"
-				title={viewers}
-				id={id}
-			/>
-		</div>
-	)
-}
+  const { name, viewers, id, handleChange, testId } = props;
+  return (
+    <div
+      className="change-count basic-padding"
+      data-testid="change-viewer-count"
+    >
+      <label>{name}</label>
+      <input
+        type="range"
+        min="0"
+        max="24"
+        defaultValue={viewers}
+        onChange={handleChange}
+        step="1"
+        title={viewers}
+        id={testId}
+        data-testid={"input-slider-" + testId}
+      />
+    </div>
+  );
+};

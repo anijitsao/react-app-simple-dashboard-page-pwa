@@ -51,12 +51,13 @@ const ViewersPanel = (props) => {
         Hourwise channel watching details
       </div>
       <div className="view-distribution">
-        {viewersData.channelInfo.map((ele) => {
+        {viewersData.channelInfo.map((ele, index) => {
           return (
             <ChangeViewerCount
-              key={ele.id}
+              key={index}
               {...ele}
               handleChange={handleChange}
+              testId={index}
             />
           );
         })}

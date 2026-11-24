@@ -7,13 +7,6 @@ import Carousel from "./Carousel";
 // css
 import "../../css/carousel.css";
 
-// images
-// import "../../assets/1.jpg";
-// import "../../assets/2.jpg";
-//
-// import "../../assets/3.jpg";
-// import "../../assets/4.jpg";
-
 const CarouselContainer = () => {
   const TOTAL_NUMBER_OF_IMAGES = 4;
   // initialize the initial state and its modifier function
