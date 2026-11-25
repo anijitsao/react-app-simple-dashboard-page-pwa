@@ -1,15 +1,13 @@
 const cacheName = "dashboard-page";
 const itemToCache = [
-  "/",
-  // "main.js",
   "/images/1.jpg",
   "/images/2.jpg",
   "/images/3.jpg",
   "/images/4.jpg",
   "/images/5.jpg",
   "/images/favicon.ico",
-  "/images/icons/icon-192x192.png",
-  "/images/icons/icon-512x512.png",
+  "/icons/icon-192x192.png",
+  "/icons/icon-512x512.png",
 ];
 
 async function installEventHandler() {
@@ -18,6 +16,7 @@ async function installEventHandler() {
 }
 // install event
 self.addEventListener("install", async (installEvent) => {
+  self.skipWaiting(); // Activate new SW immediately
   installEvent.waitUntil(installEventHandler());
 });
 
